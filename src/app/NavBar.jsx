@@ -6,10 +6,10 @@ const NavBar = (props) => {
     return (
         <header>
             <h1>{props.title}</h1>
-            <div className="navigator">
+            <div id="navigator">
                 <a href="portfolio">My Portfolio</a>
-                <a href="index.php#about">About</a>
-                <a href="index.php#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
         </header>
     );

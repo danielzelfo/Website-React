@@ -29,7 +29,9 @@ body {
       main {
         background-color: inherit;
         color: inherit;
-        min-height: calc(100% - 185px);
+        min-height: calc(100% - 255px);
+        padding-top: 35px;
+        padding-bottom: 35px;
       }
     }
 
