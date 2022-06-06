@@ -1,0 +1,101 @@
+$lightColorDark: #e9e9e9;
+$lightColorLight: white;
+
+$darkColorDark: #262626;
+$darkColorLight: #303030;
+
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  background-color: $lightColorDark;
+  color: black;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  min-width: 295px;
+
+  #root {
+    height: 100%;
+
+    #app {
+      height: 100%;
+
+      main {
+        background-color: inherit;
+        color: inherit;
+        min-height: calc(100% - 185px);
+      }
+    }
+
+  }
+
+
+}
+
+body.dark {
+  background-color: $darkColorDark;
+
+  color: $lightColorLight;
+
+  .btn.black span {
+    background-color: $lightColorLight;
+    color: $darkColorLight;
+
+    &:hover {
+      background-color: $darkColorLight;
+      color: $lightColorLight;
+      border: 1px solid $lightColorLight;
+    }
+  }
+
+  .section {
+    box-shadow: 0 2px 10px rgba(255, 255, 255, .2);
+    background-color: $darkColorLight;
+    border: 1px solid $darkColorLight;
+
+  }
+
+  a {
+    color: $lightColorLight;
+  }
+
+}
+
+.section {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+  background-color: $lightColorLight;
+  border: 1px solid $lightColorLight;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.btn.black span {
+  background-color: black;
+  color: $lightColorLight;
+}
+
+.und {
+  text-decoration: underline;
+}
+
+a.btn {
+  text-decoration: none;
+
+}
+
+.btn span {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn.black {
+  display: block;
+}
