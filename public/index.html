@@ -26,7 +26,7 @@
     -->
     <title>Daniel Zelfo</title>
   </head>
-  <body class="dark">
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -40,4 +40,16 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.querySelector("body").classList.add("dark");
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if(event.matches)
+          document.querySelector("body").classList.add("dark");
+        else
+          document.querySelector("body").classList.remove("dark");
+    });
+  </script>
 </html>
