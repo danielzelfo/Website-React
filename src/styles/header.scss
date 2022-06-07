@@ -21,7 +21,7 @@ body.dark {
             }
         }
 
-        #navigator a {
+        #navigator > * {
             background-color: $lightColorLight;
             color: $darkColorLight;
 
@@ -62,7 +62,7 @@ header {
         }
     }
 
-    #navigator a {
+    #navigator > * {
         background-color: black;
         color: $lightColorLight;
         margin: 2.5px;

@@ -1,9 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../styles/home.scss';
 import Cell from '../components/Cell';
+import { Link } from 'react-router-dom';
+import { useApp } from "../app/App";
 
 const Content = () => {
-    
+    const {
+        setTitle
+    } = useApp();
+
+    useEffect(() => {
+        setTitle("Daniel Zelfo")
+    } , []);
+
     return (
         <main>
             <div id="row1">
@@ -37,7 +46,7 @@ const Content = () => {
                     <Cell name="mipsSudoku"/>
                 </div>
                 
-                <a href="portfolio" className="btn black more" style={{textAlign: "center"}}><span>Show More</span></a>
+                <Link to="portfolio" className="btn black more" style={{textAlign: "center"}}><span>Show More</span></Link>
             </div>
             <br /><br />
             <br />

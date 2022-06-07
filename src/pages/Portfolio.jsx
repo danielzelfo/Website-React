@@ -1,8 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../styles/portfolio.scss';
 import Cell from '../components/Cell';
+import { useApp } from "../app/App";
 
 const Portfolio = () => {
+    const {
+        setTitle
+    } = useApp();
+
+    useEffect(() => {
+        setTitle("Portfolio | Daniel Zelfo")
+    } , []);
 
     return (
         <main>
