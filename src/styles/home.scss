@@ -1,15 +1,10 @@
 $lightColorLight: white;
 
-.section {
-	
-	position: relative;
-	
-	.more{
-		text-align: center;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	
+.section .more {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .black span:hover {
@@ -62,8 +57,8 @@ body:not(.dark) {
 	.cell {
 		position: inherit;
 		display: inline-block;
-		width: 24%;
-        padding-top: 24%;
+		width: 25%;
+        padding-top: 25%;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -167,11 +162,11 @@ body:not(.dark) {
 }
 
 
-@media only screen and (max-aspect-ratio: 3/2) and (orientation: portrait) and (max-width: 500px) {
+@media only screen and (max-aspect-ratio: 3/2) and (orientation: portrait) and (max-width: 550px) {
 	.row {
 		.cell {
-			width: 90% !important;
-            padding-top: 90% !important;
+			width: 100% !important;
+            padding-top: 100% !important;
 		}
 	}
 	#row1>* {
