@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Cell = (props) => {
   const [classes, setClasses] = useState(`cell ${props.name}`);
@@ -8,9 +9,9 @@ const Cell = (props) => {
     props.dummy ?
       <div className="dummy nonMobile"></div>
       : 
-      <div className={classes}
+      <Link to={`/portfolio/${props.name}`} className={classes}
         onMouseEnter={() => setClasses(`cell ${props.name} cellHovered ${props.name}Hovered`)}
-        onMouseLeave={() => setClasses(`cell ${props.name}`)}></div>
+        onMouseLeave={() => setClasses(`cell ${props.name}`)}></Link>
     
   )
 

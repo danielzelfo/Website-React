@@ -9,7 +9,7 @@ const Portfolio = () => {
     } = useApp();
 
     useEffect(() => {
-        setTitle("Portfolio | Daniel Zelfo")
+        setTitle("My Portfolio")
     } , []);
 
     return (
