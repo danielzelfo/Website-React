@@ -1,13 +1,29 @@
+$lightColorLight: white;
+$darkColorLight: #303030;
+
 #projectDemo {
     text-align: center;
-
-	.black span:hover {
-		color: #0366d6  !important;
-		background-color: white !important;
-		border: 1px solid black;
-		padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .projbtn{
+        background-color: $lightColorLight;
+        color: $darkColorLight;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 4px;
+        text-decoration: none;
+        &:hover {
+            color: #0366d6;
+            background-color: $lightColorLight;
+        }
 	}
-	
+	.buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
 }
 
 body.dark{
@@ -20,9 +36,8 @@ body.dark{
     display: flex;
     justify-content: center;
     & > div {
-        width: 75%;
-        padding-top: 21.1%;
-        padding-bottom: 21.1%;
+        height: 50vh;
+        width: 65vw;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;

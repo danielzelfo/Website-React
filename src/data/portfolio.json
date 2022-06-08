@@ -1,0 +1,422 @@
+{
+    "sortingAnimations": {
+        "title": "Sorting Animations",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/sortingAnim/heaprand.webp",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/sortingAnim/quick3dec.webp",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/sortingAnim/quickrand.webp",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/sortingAnim/selectrand.webp",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/sortingAnim/shelldec.webp",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open GitHub",
+                        "url": "https://github.com/danielzelfo/SortingAnimations"
+                    }
+                ]
+            },
+            {
+                "type": "description",
+                "data": "This is a JavaFX program that can be used to visualize sorting animations It allows the user to generate data that is random, ascending, or descending with their choice of the size The user can then choose which algorithm to use to sort the data The algorithms include: Insertion Sort, Selection Sort, Shell Sort, Heap Sort, and three variations of QuickSort."
+            }
+        ]
+    },
+    "astra": {
+        "title": "AstraMonitor / AstraBot",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/astra/bb1650.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/astra/amazon3080.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/astra/amazonps5.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/astra/amazonuk3060ti.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/astra/astracommands1.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/astra/astracommands2.png",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Go to Website",
+                        "url": "https://astraworld.netlify.com"
+                    }
+                ]
+            },
+            {
+                "type": "description",
+                "data": "AstraMonitor is a bot that notifies users on discord when a product restocks online by monitoring websites including Amazon, Bestbuy, Newegg, and Walmart. AstraBot is a discord bot that mentions roles and forwards messages to appropriate channels based on restocks."
+            }
+        ]
+    },
+    "wearableWeather": {
+        "title": "Wearable Weather",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/wearableWeather.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/wearableWeatherLive.png",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open GitHub",
+                        "url": "https://github.com/danielzelfo/WearableWeather"
+                    }
+                ]
+            },
+            {
+                "type": "description",
+                "data": "This project uses an Arduino with an ESP chip and a light sensor to send information about the light surrounding the Arduino to a Rest API on a web server. The web server uses Python and the Flask web framework for the backend. The Rest API then updates the light sensor data on the web server which allows the live page to display the updated brightness animation in the frontend using HTML and CSS. This was all made in under 36 hours."
+            }
+        ]
+    },
+    "mipsSudoku": {
+        "title": "MIPS Assembly Sudoku",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mipsSudoku/mipsSudoku1.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mipsSudoku/mipsSudoku2.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mipsSudoku/mipsSudoku3.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mipsSudoku/mipsSudoku4.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mipsSudoku/mipsSudoku5.png",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "description",
+                "data": "This is a MIPS assembly program that runs on the MIPS Assembler and Runtime Simulator (MARS). It works through a MARS custom tool that displays the Sudoku grid by communicating with the MIPS assembly program and obtaining information about the digits and colors of each cell. The MIPS code allows the user to enter a move through a console window and applies the move to the board if it is legal by checking the appropriate row, column, and box for any duplicate values. If a move is not legal, the conflicting cells are marked with the error color. The program can also give hints to the user about possible values that can be placed in a given cell. At any time, the game can be saved to or loaded from disk."
+            }
+        ]
+    },
+    "cppPrograms": {
+        "title": "C++ Programs",
+        "content": []
+    },
+    "dynamite": {
+        "title": "Dynamite",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-1.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-2.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-3.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-4.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-5.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-6.png",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open GitHub",
+                        "url": "https://github.com/danielzelfo/dynamite"
+                    }
+                ]
+            },
+            {
+                "type": "description",
+                "data": "Dynamite is a tool that allows you to easily create and share interactive webpages for learning."
+            }
+        ]
+    },
+    "shopSupreme": {
+        "title": "ShopSupreme",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/ShopSupreme/items.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/ShopSupreme/checkout.PNG",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/ShopSupreme/run.png",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open GitHub",
+                        "url": "https://github.com/danielzelfo/ShopSupreme"
+                    },
+                    {
+                        "text": "Free on Chrome Webstore",
+                        "url": "https://chrome.google.com/webstore/detail/supreme-bot-shopsupreme/egoidoeijbfliecicioclcnhmpkbnked"
+                    }
+                ]
+            },
+            {
+                "type": "description",
+                "data": "This is a checkout bot for supremenewyork.com. It is a chrome extension made using JavaScript."
+            }
+        ]
+    },
+    "mountieBot": {
+        "title": "MountieBot",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mountieBot/cht.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mountieBot/classes.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mountieBot/define.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mountieBot/link.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mountieBot/poll.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mountieBot/prefix.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mountieBot/role.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/mountieBot/weather.png",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open GitHub",
+                        "url": "https://github.com/mtsac-cs/MountieBot"
+                    }
+                ]
+            },
+            {
+                "type": "description",
+                "data": "This is a discord bot made with Python and uses a MySQL server to store information about the discord server so that the information like the self assignable roles, prefixes, and links are saved and persist."
+            }
+        ]
+    },
+    "todoList": {
+        "title": "To-do List",
+        "content": [                
+            {
+                "type": "description",
+                "data": "This is a todo list made using CSS and jQuery. It allows the user to enter tasks on the todo list, add more lines for tasks, cross out tasks, remove tasks, and much more."
+            }
+        ]
+    },
+    "scheduler": {
+        "title": "Employee Scheduler Program",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/availability.png",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open GitHub",
+                        "url": "https://github.com/hyc121110/CitrusHack2019"
+                    }
+                ]
+            },
+            {
+                "type": "description",
+                "data": "This program uses a web interface to get the availability of employees. It then allows the employer to generate a work schedule for employees using all their availabilities. It uses Python for the backend, which includes the Flask web framework. Python is also used to generate the work schedules. This was all made under 24 hours."
+            }
+        ]
+    },
+    "neighborBank": {
+        "title": "Friendly Neighborhood Bank",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/neighborBankCover.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/neighborBankCreate.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/neighborBankTrans.png",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open GitHub",
+                        "url": "https://github.com/danielzelfo/NeighborBank"
+                    }
+                ]
+            },
+            {
+                "type": "description",
+                "data": "This is a banking application made with Java. It allows users to create different types of accounts and make transactions within those accounts. It has a GUI made with JavaFX."
+            }
+        ]
+    },
+    "opbot": {
+        "title": "oPBoT",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/opbotDemo.png",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/oPBoT.png",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open GitHub",
+                        "url": "https://github.com/danielzelfo/OPBoT"
+                    }
+                ]
+            },
+            {
+                "type": "description",
+                "data": "This is a discord bot made using Java for discord servers. It includes basic moderation commands and voice channel commands."
+            }
+        ]
+    },
+    "encrytion": {
+        "title": "Encryption Using Matrices",
+        "content": [
+            {
+                "type": "description",
+                "data": "This program uses JavaScript to encrypt messages than the user can input through a web interface made using HTML and CSS. The program then encryptes the messages using a random 2x2 matrix. The user is given the encrypted message and a passcode that can be used to decrypt the message."
+            }
+        ]
+    },
+    "paint": {
+        "title": "Paint",
+        "content": [
+            {
+                "type": "description",
+                "data": "These programs are basic paint programs made using JavaScript that allow the user to paint using any color, erase, and choose the size of the pen. One is made using the canvas element to be a regular paint program while the other is a pixelated paint program that paints individual elements on the page."
+            }
+        ]
+    }
+}
