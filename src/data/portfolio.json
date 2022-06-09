@@ -301,7 +301,11 @@
     },
     "todoList": {
         "title": "To-do List",
-        "content": [                
+        "content": [
+            {
+                "type": "component",
+                "data": "ToDoList"
+            },
             {
                 "type": "description",
                 "data": "This is a todo list made using CSS and jQuery. It allows the user to enter tasks on the todo list, add more lines for tasks, cross out tasks, remove tasks, and much more."
@@ -405,6 +409,10 @@
         "title": "Encryption Using Matrices",
         "content": [
             {
+                "type": "component",
+                "data": "EncryptionUsingMatrices"
+            },
+            {
                 "type": "description",
                 "data": "This program uses JavaScript to encrypt messages than the user can input through a web interface made using HTML and CSS. The program then encryptes the messages using a random 2x2 matrix. The user is given the encrypted message and a passcode that can be used to decrypt the message."
             }
@@ -413,6 +421,14 @@
     "paint": {
         "title": "Paint",
         "content": [
+            {
+                "type": "component",
+                "data": "Paint"
+            },
+            {
+                "type": "component",
+                "data": "PixelatedPaint"
+            },
             {
                 "type": "description",
                 "data": "These programs are basic paint programs made using JavaScript that allow the user to paint using any color, erase, and choose the size of the pen. One is made using the canvas element to be a regular paint program while the other is a pixelated paint program that paints individual elements on the page."
