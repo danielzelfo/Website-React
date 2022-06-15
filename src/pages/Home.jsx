@@ -10,7 +10,8 @@ const Content = () => {
     } = useApp();
 
     useEffect(() => {
-        setTitle("Daniel Zelfo")
+        setTitle("Daniel Zelfo");
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     } , []);
 
     return (

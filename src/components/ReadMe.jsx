@@ -22,6 +22,7 @@ const ReadMe = (props) => {
                     )
                 )
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return <div style={{ display: "flex", gap: "20px", flexDirection: "column", alignItems: "center" }}> {
