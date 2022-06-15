@@ -30,15 +30,16 @@ const Content = () => {
                     <div>
                         <h2>Interests</h2>
                         <ol>
-                            <li><p>Web Development</p></li>
+                            <li><p>Full Stack Web Development</p></li>
+                            <li><p>Information Retreival / Web Crawlers</p></li>
                             <li><p>Machine Learning / Data Mining</p></li>
-                            <li><p>Optimization</p></li>
+                            <li><p>Operating Systems</p></li>
                             <li><p>Computer Networks</p></li>
                             <li><p>Cyber Security</p></li>
                             <li><p>Quantum Computing</p></li>
                         </ol>
                     </div>
-                    <div class="education">
+                    <div className="education">
                         <h2>Education</h2>
                         <ol>
                             <li><p><span>BS in Computer Science — Algorithms, 2022</span><span>University of California, Irvine</span></p></li>

@@ -171,13 +171,11 @@ body:not(.dark) {
 					span {
 						display: block;
 					}
-					text-align: left;
+					text-align: left;					
 				}
 				&.education {
-					ol {
-						display: flex;
-						flex-direction: column;
-						gap: 10px;
+					span:nth-child(2) {
+						font-weight: 400;
 					}
 				}
 			}
