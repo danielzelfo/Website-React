@@ -3,57 +3,92 @@ $darkColorLight: #303030;
 
 #projectDemo {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    .projbtn{
-        background-color: $lightColorLight;
-        color: $darkColorLight;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 4px;
-        text-decoration: none;
-        &:hover {
-            color: #0366d6;
-            background-color: $lightColorLight;
-        }
-	}
-	.buttons {
+    .content {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 5px;
+        flex-direction: column;
+        gap: 20px;
+
+        img {
+            max-height: 500px;
+            max-width: 100%;
+        }
+
+        .subblock {
+            width: 90%;
+            text-align: left;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #F5F5F5;
+
+            * {
+                opacity: 1;
+                font-weight: 400;
+            }
+
+            ;
+        }
+
+        .description {
+            opacity: 1;
+            font-weight: 400;
+        }
+
+        .projbtn {
+            background-color: $lightColorLight;
+            color: $darkColorLight;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 4px;
+            text-decoration: none;
+
+            &:hover {
+                color: #0366d6;
+                background-color: $lightColorLight;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 5px;
+        }
     }
 }
 
-body.dark{
-	.content .description{
-		background-color: #262626 !important;
-	}
+body.dark {
+    .content .subblock {
+        background-color: #262626 !important;
+    }
 }
 
 .each-slide {
     display: flex;
     justify-content: center;
-    & > div {
+
+    &>div {
         height: 50vh;
         width: 65vw;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        & > span {
+
+        &>span {
             text-transform: uppercase;
             text-shadow: 2px 2px 20px black;
             color: #f5f5f5;
             font-weight: 600;
             font-size: 2em;
-            font-family: "Source Sans Pro","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+            font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         }
     }
 }
 
 @media only screen and (max-aspect-ratio: 3/2) and (orientation: portrait) and (max-width: 550px) {
-	#projectDemo .description{
-		width: 90%;
-	}
+
+    #projectDemo .subblock,
+    #projectDemo .description {
+        width: 90%;
+    }
 }

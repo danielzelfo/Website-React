@@ -156,7 +156,12 @@
     },
     "cppPrograms": {
         "title": "C++ Programs",
-        "content": []
+        "content": [
+            {
+            "type": "component",
+            "data": "CppPrograms"
+            }
+        ]
     },
     "dynamite": {
         "title": "Dynamite",
@@ -201,7 +206,7 @@
             },
             {
                 "type": "description",
-                "data": "Dynamite is a tool that allows you to easily create and share interactive webpages for learning."
+                "data": "Dynamite is a tool for creating interactive webpages for learning any subject.\nDynamite allows you to create a lesson by entering the content on the home page. Dynamite provides a url for a live view of the lesson as you create it. You can create a lesson webpage in which a student can read content, watch videos, and answer questions. Dynamite will evolve to include more ways to answer questions, including multiple choice, code, and much more. Dynamite will also evolve to allow for collaboration between multiple people. This will include video calls and screen sharing between students."
             }
         ]
     },
@@ -305,6 +310,15 @@
             {
                 "type": "component",
                 "data": "ToDoList"
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open GitHub",
+                        "url": "https://github.com/danielzelfo/ToDo-List"
+                    }
+                ]
             },
             {
                 "type": "description",
@@ -428,6 +442,15 @@
             {
                 "type": "component",
                 "data": "PixelatedPaint"
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open GitHub",
+                        "url": "https://github.com/danielzelfo/PixelatedPaint"
+                    }
+                ]
             },
             {
                 "type": "description",

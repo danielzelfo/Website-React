@@ -3,6 +3,7 @@ import TodoList from './portfolio/ToDoList';
 import EncryptionUsingMatrices from './portfolio/EncryptionUsingMatrices';
 import Paint from './portfolio/Paint';
 import PixelatedPaint from './portfolio/PixelatedPaint';
+import CppPrograms from './portfolio/CppPrograms';
 
 const ProjectLoader = (props) => {
 
@@ -13,9 +14,10 @@ const ProjectLoader = (props) => {
             <EncryptionUsingMatrices />
         : props.name === "Paint" ?
             <Paint />
+        : props.name === "CppPrograms" ?
+            <CppPrograms />
         : props.name === "PixelatedPaint" &&
             <PixelatedPaint />
-
     )
 
 }

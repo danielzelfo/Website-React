@@ -13,37 +13,42 @@ const Project = () => {
     const { project_name } = useParams();
 
     useEffect(() => {
-        setTitle(data[project_name].title);
+        setTitle(data[project_name].title + " | Daniel Zelfo");
     }, []);
 
     return (
         <main>
             <div className="section" id="projectDemo">
-                {data[project_name].content.map((e, idx) => (
-                    <div key={idx}>
-                        {e.type === "component" ?
-                            <ProjectLoader name={e.data} />
-                        : e.type === "slideshow" ?
-                            <Slide>
-                                {e.data.map((slideImage, index) => (
-                                    <div className="each-slide" key={index}>
-                                        <div style={{ backgroundImage: `url(${slideImage.url})` }}>
-                                            <span>{slideImage.caption}</span>
+                <div className="content">
+                    {data[project_name].content.map((e, idx) => (
+                            e.type === "component" ?
+                                <ProjectLoader name={e.data} key={idx}/>
+                            : e.type === "slideshow" ?
+                                <Slide key={idx}>
+                                    {e.data.map((slideImage, index) => (
+                                        <div className="each-slide" key={index}>
+                                            <div style={{ backgroundImage: `url(${slideImage.url})` }}>
+                                                <span>{slideImage.caption}</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                ))}
-                            </Slide>
-                        : e.type === "buttons" ?
-                            <div className="buttons">
-                                {e.data.map((btn, idx) => (
-                                    <a key={idx} className="projbtn" href={btn.url} target="_blank" rel="noreferrer">{btn.text}</a>
-                                ))}
-                            </div>
-                        : e.type === "description" && 
-                            <p className="description">{e.data}</p>
-                        }
-                    </div>
-                ))}
+                                    ))}
+                                </Slide>
+                            : e.type === "buttons" ?
+                                <div className="buttons" key={idx}>
+                                    {e.data.map((btn, idx) => (
+                                        <a key={idx} className="projbtn" href={btn.url} target="_blank" rel="noreferrer">{btn.text}</a>
+                                    ))}
+                                </div>
+                            : e.type === "description" && 
+                                <div>
+                                    {
+                                    e.data.split("\n").map(data =>
+                                        <p className="description" key={idx}>{data}</p>
+                                    )
+                                    }
+                                </div>
+                    ))}
+                </div>
             </div>
         </main>
     );
