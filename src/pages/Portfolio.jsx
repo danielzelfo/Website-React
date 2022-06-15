@@ -9,7 +9,7 @@ const Portfolio = () => {
     } = useApp();
 
     useEffect(() => {
-        setTitle("My Portfolio | Daniel Zelfo");
+        setTitle("My Portfolio");
         // eslint-disable-next-line react-hooks/exhaustive-deps
     } , []);
 

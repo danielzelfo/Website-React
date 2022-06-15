@@ -6,10 +6,11 @@ import React, { createContext, useState, useContext, useEffect } from "react";
 const AppContext = createContext({});
 
 const App = () => {
-  const [title, setTitle] = useState("Daniel Zelfo");
+  const defaultTitle = "Daniel Zelfo";
+  const [title, setTitle] = useState(defaultTitle);
   
   useEffect(() => {
-    document.title = title;
+    document.title = title + (title === defaultTitle ? "" : ` | ${defaultTitle}`);
   }, [title]);
 
   return (

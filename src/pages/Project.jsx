@@ -13,7 +13,7 @@ const Project = () => {
     const { project_name } = useParams();
 
     useEffect(() => {
-        setTitle(data[project_name].title + " | Daniel Zelfo");
+        setTitle(data[project_name].title);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [project_name]);
 
