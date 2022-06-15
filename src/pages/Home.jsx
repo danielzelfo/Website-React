@@ -15,30 +15,40 @@ const Content = () => {
     } , []);
 
     return (
-        <main>
-            <div id="row1">
-                <div className="section" id="aboutSection">
-                    <div className="about">
-                        <h1 className="und" id="about">About Me</h1>
-                        <br />
-                        <p>Computer science student at <a href="https://www.ics.uci.edu/" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>UCI</a>.</p>
-                        <br /><br />
+        <main style={{display: "flex", flexDirection: "column", gap: "40px"}}>
+            <div className="section" id="aboutme">
+                <div>
+                    <h2>Software Engineer at<br/>Amazon</h2>
+                    <p>Connect with me</p>
+                    <div id="socialMediaBlock">
+                        <a href="https://www.linkedin.com/in/daniel-zelfo/" target="_blank" rel="noreferrer"><img alt="LinkedIn Logo" src="https://danielzelfo.github.io/img/min/linkedin.png" /></a>
+                        <a id="githubLink" href="https://github.com/danielzelfo" target="_blank" rel="noreferrer"><img alt="GitHub Logo" src="https://danielzelfo.github.io/img/min/github.png" /></a>
                     </div>
-                    <div className="about">
-                        <div id="socialMediaBlock">
-                            <a href="https://www.linkedin.com/in/daniel-zelfo/" target="_blank" rel="noreferrer"><img alt="LinkedIn Logo" src="https://danielzelfo.github.io/img/min/linkedin.png" /></a>
-                            <a id="githubLink" href="https://github.com/danielzelfo" target="_blank" rel="noreferrer"><img alt="GitHub Logo" src="https://danielzelfo.github.io/img/min/github.png" /></a>
-                        </div>
-                    </div>
-                    <br />
-                    <br />
+                    <a href="mailto:me@danielzelfo.com?Subject=Website%20Contact%20Email" >me@danielzelfo.com</a>
                 </div>
-                <br />
+                <div>
+                    <div>
+                        <h2>Interests</h2>
+                        <ol>
+                            <li><p>Web Development</p></li>
+                            <li><p>Machine Learning / Data Mining</p></li>
+                            <li><p>Optimization</p></li>
+                            <li><p>Computer Networks</p></li>
+                            <li><p>Cyber Security</p></li>
+                            <li><p>Quantum Computing</p></li>
+                        </ol>
+                    </div>
+                    <div class="education">
+                        <h2>Education</h2>
+                        <ol>
+                            <li><p><span>BS in Computer Science — Algorithms, 2022</span><span>University of California, Irvine</span></p></li>
+                            <li><p><span>AS in Mathematics, 2020</span><span>Mt. San Antonio College</span></p></li>
+                        </ol>
+                    </div>
+                </div>
             </div>
-            <br /><br />
             <div className="section" id="portfolio">
                 <h1 className="und">My Portfolio</h1>
-                <br />
                 
                 <div className="row">
                     <Cell name="sortingAnimations"/>
@@ -47,17 +57,7 @@ const Content = () => {
                     <Cell name="mipsSudoku"/>
                 </div>
                 
-                <Link to="portfolio" className="btn black more" style={{textAlign: "center"}}><span>Show More</span></Link>
-            </div>
-            <br /><br />
-            <br />
-            <div className="section" id="contact">
-                <h1 className="und">Contact Me</h1>
-                <br />
-                <h2>My email:</h2>
-                <br />
-                <a href="mailto:me@danielzelfo.com?Subject=Website%20Contact%20Email" >me@danielzelfo.com</a>
-                <br />
+                <Link to="portfolio" className="btn black more" style={{marginTop: "20px", textAlign: "center"}}><span>Show More</span></Link>
             </div>
         </main>
     );

@@ -7,19 +7,10 @@ const NavBar = (props) => {
     return (
         <header>
             <h1>{props.title}</h1>
-            {props.title === "Daniel Zelfo" ?
-                <div id="navigator">
-                    <Link to="portfolio">My Portfolio</Link>
-                    <a href="/#about">About</a>
-                    <a href="/#contact">Contact</a>
-                </div>
-                :
-                <div id="navigator">
-                    <Link to="portfolio">My Portfolio</Link>
-                    <Link to="/#about">About</Link>
-                    <Link to="/#contact">Contact</Link>
-                </div>
-            }
+            <div id="navigator">
+                <Link to="/">Home</Link>
+                <Link to="portfolio">My Portfolio</Link>
+            </div>
         </header>
     );
 }

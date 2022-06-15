@@ -64,9 +64,12 @@ body.dark {
   }
 
   a {
-    color: $lightColorLight;
+    color: #2962ff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
-
 }
 
 .section {
@@ -95,8 +98,7 @@ body.dark {
 }
 
 a.btn {
-  text-decoration: none;
-
+  text-decoration: none !important;
 }
 
 .btn span {
