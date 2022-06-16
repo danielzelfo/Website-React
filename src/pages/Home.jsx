@@ -35,8 +35,6 @@ const Content = () => {
                             <li><p>Machine Learning / Data Mining</p></li>
                             <li><p>Operating Systems</p></li>
                             <li><p>Computer Networks</p></li>
-                            <li><p>Cyber Security</p></li>
-                            <li><p>Quantum Computing</p></li>
                         </ol>
                     </div>
                     <div className="education">
