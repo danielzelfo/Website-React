@@ -191,8 +191,8 @@
                 ]
             },
             {
-                "type":"component",
-                "data":"CppPrograms"
+                "type":"readmes",
+                "data": ["GraphAlgorithmsCpp", "AlgorithmsCpp", "DataStructuresCpp", "OOPCpp", "AirportFlights", "SimpleTextEditor", "StacksExpressions"]
             }
         ]
     },
@@ -591,8 +591,8 @@
                 ]
             },
             {
-                "type":"component",
-                "data":"Spidey"
+                "type":"readmes",
+                "data": ["spidey"]
             },
             {
                 "type":"buttons",

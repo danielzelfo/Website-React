@@ -5,8 +5,9 @@ import { Slide } from "react-slideshow-image";
 import "../styles/project.scss";
 import "react-slideshow-image/dist/styles.css";
 import data from "../data/portfolio.json";
-import ProjectLoader from "../components/ProjectLoader"
+import ComponentLoader from "../components/ComponentLoader"
 import Languages from "../components/Languages";
+import ReadMes from "../components/ReadMes";
 
 const Project = () => {
     const { setTitle } = useApp();
@@ -30,7 +31,7 @@ const Project = () => {
                 <div className="content">
                     {data[project_name] !== undefined && data[project_name].content.map((e, idx) => (
                             e.type === "component" ?
-                                <ProjectLoader name={e.data} key={idx}/>
+                                <ComponentLoader name={e.data} key={idx}/>
                             : e.type === "slideshow" ?
                                 <Slide key={idx}>
                                     {e.data.map((slideImage, index) => (
@@ -49,6 +50,8 @@ const Project = () => {
                                 </div>
                             : e.type === "languages" ?
                                 <Languages data={e.data} />
+                            : e.type === "readmes" ?
+                                <ReadMes repos={e.data} />
                             : e.type === "description" && 
                                 <div>
                                     {

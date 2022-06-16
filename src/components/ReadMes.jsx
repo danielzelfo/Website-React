@@ -2,7 +2,7 @@ import ReactMarkdown from 'react-markdown'
 import { useState, useEffect } from 'react';
 import { get_readme } from "../requests/readme";
 
-const ReadMe = (props) => {
+const ReadMes = (props) => {
 
     const [repoReadmes, setRepoReadmes] = useState([]);
 
@@ -40,4 +40,4 @@ const ReadMe = (props) => {
 
 }
 
-export default ReadMe;
+export default ReadMes;
