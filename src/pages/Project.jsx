@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useApp } from "../app/App";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 import "../styles/project.scss";
 import "react-slideshow-image/dist/styles.css";
@@ -12,8 +12,14 @@ const Project = () => {
 
     const { project_name } = useParams();
 
+    const navigate = useNavigate();
+
     useEffect(() => {
-        setTitle(data[project_name].title);
+        if (data[project_name] === undefined) 
+            navigate("/")
+        else
+            setTitle(data[project_name].title);
+        
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [project_name]);
 
@@ -21,7 +27,7 @@ const Project = () => {
         <main>
             <div className="section" id="projectDemo">
                 <div className="content">
-                    {data[project_name].content.map((e, idx) => (
+                    {data[project_name] !== undefined && data[project_name].content.map((e, idx) => (
                             e.type === "component" ?
                                 <ProjectLoader name={e.data} key={idx}/>
                             : e.type === "slideshow" ?
