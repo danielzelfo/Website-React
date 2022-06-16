@@ -457,5 +457,44 @@
                 "data": "These programs are basic paint programs made using JavaScript that allow the user to paint using any color, erase, and choose the size of the pen. One is made using the canvas element to be a regular paint program while the other is a pixelated paint program that paints individual elements on the page."
             }
         ]
+    },
+    "spidey": {
+        "title": "Spidey Search",
+        "content": [
+            {
+                "type": "slideshow",
+                "data": [
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/spidey/home.JPG",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/spidey/cisco.JPG",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/spidey/csc.JPG",
+                        "caption": ""
+                    },
+                    {
+                        "url": "https://danielzelfo.github.io/img/min/portfolio/spidey/mswe.JPG",
+                        "caption": ""
+                    }
+                ]
+            },
+            {
+                "type": "component",
+                "data": "Spidey"
+            },
+            {
+                "type": "buttons",
+                "data": [
+                    {
+                        "text": "Open Website",
+                        "url": "https://spideyweb.netlify.app"
+                    }
+                ]
+            }
+        ]
     }
 }

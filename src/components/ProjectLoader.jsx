@@ -4,6 +4,7 @@ import EncryptionUsingMatrices from './portfolio/EncryptionUsingMatrices';
 import Paint from './portfolio/Paint';
 import PixelatedPaint from './portfolio/PixelatedPaint';
 import CppPrograms from './portfolio/CppPrograms';
+import Spidey from './portfolio/Spidey';
 
 const ProjectLoader = (props) => {
 
@@ -16,6 +17,8 @@ const ProjectLoader = (props) => {
             <Paint />
         : props.name === "CppPrograms" ?
             <CppPrograms />
+        : props.name === "Spidey" ?
+                <Spidey />
         : props.name === "PixelatedPaint" &&
             <PixelatedPaint />
     )
