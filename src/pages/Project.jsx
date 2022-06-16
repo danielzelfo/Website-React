@@ -6,6 +6,7 @@ import "../styles/project.scss";
 import "react-slideshow-image/dist/styles.css";
 import data from "../data/portfolio.json";
 import ProjectLoader from "../components/ProjectLoader"
+import Languages from "../components/Languages";
 
 const Project = () => {
     const { setTitle } = useApp();
@@ -46,6 +47,8 @@ const Project = () => {
                                         <a key={idx} className="projbtn" href={btn.url} target="_blank" rel="noreferrer">{btn.text}</a>
                                     ))}
                                 </div>
+                            : e.type === "languages" ?
+                                <Languages data={e.data} />
                             : e.type === "description" && 
                                 <div>
                                     {
