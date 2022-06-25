@@ -8,6 +8,7 @@ import data from "../data/portfolio.json";
 import ComponentLoader from "../components/ComponentLoader"
 import Languages from "../components/Languages";
 import ReadMes from "../components/ReadMes";
+import YouTubeVids from "../components/YouTubeVids";
 
 const Project = () => {
     const { setTitle } = useApp();
@@ -50,6 +51,8 @@ const Project = () => {
                                 </div>
                             : e.type === "languages" ?
                                 <Languages data={e.data} />
+                            : e.type === "YouTubeVids" ?
+                                <YouTubeVids data={e.data} />
                             : e.type === "readmes" ?
                                 <ReadMes repos={e.data} />
                             : e.type === "description" && 

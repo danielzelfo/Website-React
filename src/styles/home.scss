@@ -91,34 +91,25 @@ body:not(.dark) {
 			cursor: pointer;
 		}
 	}
-	.wearableWeather::before {
-		background-image: url("https://danielzelfo.github.io/img/min/portfolio/wearableWeather.png");
+
+	.FabFlix::before {
+		background-image: url("https://danielzelfo.github.io/img/min/portfolio/FabFlix/search.jpg");
 	}
-	.wearableWeatherHovered::before {
-		background-image: url("https://danielzelfo.github.io/img/min/portfolio/wearableWeatherLive.png");
+	.FabFlixHovered::before {
+		background-image: url("https://danielzelfo.github.io/img/min/portfolio/FabFlix/movie.jpg");
 	}
-	.wearableWeatherHovered::after {
-		content: "Wearable Weather";
+	.FabFlix::after {
+		content: "FabFlix";
 	}
-	
-	.sortingAnimations::before {
-		background-image: url("https://danielzelfo.github.io/img/min/portfolio/sortingAnim/selectrand.PNG");
+
+	.spidey::before {
+		background-image: url("https://danielzelfo.github.io/img/min/portfolio/spidey/home.JPG");
 	}
-	.sortingAnimationsHovered::before {
-		background-image: url("https://danielzelfo.github.io/img/min/portfolio/sortingAnim/selectrand.gif");
+	.spideyHovered::before {
+		background-image: url("https://danielzelfo.github.io/img/min/portfolio/spidey/mswe.JPG");
 	}
-	.sortingAnimationsHovered::after {
-		content: "Sorting Animations";
-	}
-	
-	.mipsSudoku::before {
-		background-image: url("https://danielzelfo.github.io/img/min/portfolio/mipsSudoku/mipsSudoku4.png");
-	}
-	.mipsSudokuHovered::before {
-		background-image: url("https://danielzelfo.github.io/img/min/portfolio/mipsSudoku/mipsSudoku5.png");
-	}
-	.mipsSudokuHovered::after {
-		content: "MIPS Sudoku";
+	.spidey::after {
+		content: "Spidey Search";
 	}
 	
 	.astra::before {
@@ -130,7 +121,37 @@ body:not(.dark) {
 	.astraHovered::after {
 		content: "Astra";
 	}
-	
+
+	.mipsSudoku::before {
+		background-image: url("https://danielzelfo.github.io/img/min/portfolio/mipsSudoku/mipsSudoku4.png");
+	}
+	.mipsSudokuHovered::before {
+		background-image: url("https://danielzelfo.github.io/img/min/portfolio/mipsSudoku/mipsSudoku5.png");
+	}
+	.mipsSudokuHovered::after {
+		content: "MIPS Sudoku";
+	}
+
+	.wearableWeather::before {
+		background-image: url("https://danielzelfo.github.io/img/min/portfolio/wearableWeather.png");
+	}
+	.wearableWeatherHovered::before {
+		background-image: url("https://danielzelfo.github.io/img/min/portfolio/wearableWeatherLive.png");
+	}
+	.wearableWeatherHovered::after {
+		content: "Wearable Weather";
+	}
+
+	.sortingAnimations::before {
+		background-image: url("https://danielzelfo.github.io/img/min/portfolio/sortingAnim/selectrand.PNG");
+	}
+	.sortingAnimationsHovered::before {
+		background-image: url("https://danielzelfo.github.io/img/min/portfolio/sortingAnim/selectrand.gif");
+	}
+	.sortingAnimationsHovered::after {
+		content: "Sorting Animations";
+	}
+
 	.cellHovered::before {
 		animation: tilt 1s forwards;
 	}

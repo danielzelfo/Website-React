@@ -50,9 +50,9 @@ const Content = () => {
                 <h1 className="und">My Portfolio</h1>
                 
                 <div className="row">
-                    <Cell name="sortingAnimations"/>
+                    <Cell name="FabFlix"/>
+                    <Cell name="spidey"/>
                     <Cell name="astra"/>
-                    <Cell name="wearableWeather"/>
                     <Cell name="mipsSudoku"/>
                 </div>
                 

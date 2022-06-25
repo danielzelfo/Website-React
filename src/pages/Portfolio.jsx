@@ -17,28 +17,28 @@ const Portfolio = () => {
         <main>
             <div class="section" id="grid">
                 <div class="row">
-                    <Cell name="sortingAnimations" />
-                    <Cell name="astra" />
-                    <Cell name="wearableWeather" />
-                    <Cell name="mipsSudoku" />
+                    <Cell name="FabFlix"/>
+                    <Cell name="spidey"/>
+                    <Cell name="astra"/>
+                    <Cell name="mipsSudoku"/>
                 </div>
                 <div class="row">
                     <Cell name="cppPrograms" />
+                    <Cell name="sortingAnimations" />
                     <Cell name="dynamite" />
                     <Cell name="shopSupreme" />
-                    <Cell name="mountieBot" />
                 </div>
                 <div class="row">
                     <Cell name="todoList" />
+                    <Cell name="mountieBot" />
+                    <Cell name="wearableWeather" />
                     <Cell name="scheduler" />
-                    <Cell name="neighborBank" />
-                    <Cell name="opbot" />
                 </div>
                 <div class="row">
+                    <Cell name="neighborBank" />
+                    <Cell name="opbot" />
                     <Cell name="encrytion" />
                     <Cell name="paint" />
-                    <Cell dummy />
-                    <Cell dummy />
                 </div>
             </div>
         </main>
