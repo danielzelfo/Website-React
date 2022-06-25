@@ -18,8 +18,9 @@ const Project = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         if (data[project_name] === undefined) 
-            navigate("/")
+            navigate("/");
         else
             setTitle(data[project_name].title);
         

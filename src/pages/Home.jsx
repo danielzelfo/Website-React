@@ -47,7 +47,7 @@ const Content = () => {
                 </div>
             </div>
             <div className="section" id="portfolio">
-                <h1 className="und">My Portfolio</h1>
+                <h1>My Portfolio</h1>
                 
                 <div className="row">
                     <Cell name="FabFlix"/>

@@ -9,6 +9,7 @@ const Portfolio = () => {
     } = useApp();
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         setTitle("My Portfolio");
         // eslint-disable-next-line react-hooks/exhaustive-deps
     } , []);

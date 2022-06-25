@@ -41,14 +41,16 @@ $lightColorLight: white;
 
             &::after {
                 position: absolute;
-                left: 0;
                 font: bold 20px Arial;
                 color: $lightColorLight;
+                text-shadow: 2px 2px 5px black;
                 width: 100%;
                 height: 100%;
-                line-height: 50vh;
                 text-align: center;
+                top: 0;
+                left: 0;
                 cursor: pointer;
+                padding-top: 50%;
             }
         }
 
@@ -76,7 +78,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/todo1.png");
         }
 
-        .todoListHovered::after {
+        .todoList::after {
             content: "To-do List";
         }
 
@@ -88,7 +90,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/neighborBankCreate.png");
         }
 
-        .neighborBankHovered::after {
+        .neighborBank::after {
             content: "Friendly Neighborhood Bank";
         }
 
@@ -100,7 +102,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/encryption2.png");
         }
 
-        .encrytionHovered::after {
+        .encrytion::after {
             content: "Encryption Using Matrices";
         }
 
@@ -108,7 +110,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/oPBoT.png");
         }
 
-        .opbotHovered::after {
+        .opbot::after {
             content: "oPBoT";
         }
 
@@ -116,7 +118,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/paintPX.png");
         }
 
-        .paintHovered::after {
+        .paint::after {
             content: "Paint";
         }
 
@@ -124,7 +126,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/availability.png");
         }
 
-        .schedulerHovered::after {
+        .scheduler::after {
             content: "Employee Scheduler";
         }
 
@@ -136,7 +138,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/wearableWeatherLive.png");
         }
 
-        .wearableWeatherHovered::after {
+        .wearableWeather::after {
             content: "Wearable Weather";
         }
 
@@ -148,7 +150,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/sortingAnim/selectrand.gif");
         }
 
-        .sortingAnimationsHovered::after {
+        .sortingAnimations::after {
             content: "Sorting Animations";
         }
 
@@ -160,7 +162,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/mountieBot/roles.png");
         }
 
-        .mountieBotHovered::after {
+        .mountieBot::after {
             content: "MouniteBot";
         }
 
@@ -168,7 +170,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/cppCode.png");
         }
 
-        .cppProgramsHovered::after {
+        .cppPrograms::after {
             content: "C++ Programs";
         }
 
@@ -180,7 +182,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/ShopSupreme/shopsupremedesign.png");
         }
 
-        .shopSupremeHovered::after {
+        .shopSupreme::after {
             content: "ShopSupreme";
         }
 
@@ -192,7 +194,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/dynamite/dynamite-3.jpg");
         }
 
-        .dynamiteHovered::after {
+        .dynamite::after {
             content: "Dynamite";
         }
 
@@ -204,7 +206,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/astra/amazon3080.png");
         }
 
-        .astraHovered::after {
+        .astra::after {
             content: "Astra";
         }
 
@@ -216,7 +218,7 @@ $lightColorLight: white;
             background-image: url("https://danielzelfo.github.io/img/min/portfolio/mipsSudoku/mipsSudoku5.png");
         }
 
-        .mipsSudokuHovered::after {
+        .mipsSudoku::after {
             content: "MIPS Sudoku";
         }
 
