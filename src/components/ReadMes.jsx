@@ -1,6 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 import { useState, useEffect } from 'react';
-import { get_readme } from "../requests/readme";
+import { get_readme } from "../requests/readme_request";
 
 const ReadMes = (props) => {
 
@@ -9,7 +9,7 @@ const ReadMes = (props) => {
     const user = "danielzelfo";
 
     const projecturl = (repo) => `https://github.com/${user}/${repo}`
-
+    
     useEffect(() => {
         for (let i = 0; i < props.repos.length; ++i) {
             get_readme(user, props.repos[i])
@@ -17,7 +17,7 @@ const ReadMes = (props) => {
                     setRepoReadmes(oldRepoReadmes =>
                         [
                             ...oldRepoReadmes,
-                            [props.repos[i], response.data]
+                            [props.repos[i], response.data.replaceAll("](/", "](").replace(/\]\(([^)]+)\)/g, (_, url) => `](${new URL(url, projecturl(props.repos[i])+"/blob/master/").href})`)]
                         ].sort((a, b) => props.repos.indexOf(a[0]) < props.repos.indexOf(b[0]))
                     )
                 )
