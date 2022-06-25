@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useApp } from "../app/App";
 import { useParams, useNavigate } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
@@ -17,6 +17,8 @@ const Project = () => {
 
     const navigate = useNavigate();
 
+    const ref = useRef(null);
+
     useEffect(() => {
         window.scrollTo(0, 0);
         if (data[project_name] === undefined) 
@@ -30,14 +32,14 @@ const Project = () => {
     return (
         <main>
             <div className="section" id="projectDemo">
-                <div className="content">
+                <div className="content" ref={ref}>
                     {data[project_name] !== undefined && data[project_name].content.map((e, idx) => (
                             e.type === "component" ?
                                 <ComponentLoader name={e.data} key={idx}/>
                             : e.type === "slideshow" ?
                                 <Slide key={idx}>
-                                    {e.data.map((slideImage, index) => (
-                                        <div className="each-slide" key={index}>
+                                    {e.data.map((slideImage, idxslide) => (
+                                        <div className="each-slide" key={idxslide}>
                                             <div style={{ backgroundImage: `url(${slideImage.url})` }}>
                                                 <span>{slideImage.caption}</span>
                                             </div>
@@ -46,21 +48,21 @@ const Project = () => {
                                 </Slide>
                             : e.type === "buttons" ?
                                 <div className="buttons" key={idx}>
-                                    {e.data.map((btn, idx) => (
-                                        <a key={idx} className="projbtn" href={btn.url} target="_blank" rel="noreferrer">{btn.text}</a>
+                                    {e.data.map((btn, idxbtn) => (
+                                        <a key={idxbtn} className="projbtn" href={btn.url} target="_blank" rel="noreferrer">{btn.text}</a>
                                     ))}
                                 </div>
                             : e.type === "languages" ?
-                                <Languages data={e.data} />
+                                <Languages data={e.data} key={idx}/>
                             : e.type === "YouTubeVids" ?
-                                <YouTubeVids data={e.data} />
+                                <YouTubeVids data={e.data} key={idx} width={ref.current === null ? 560 : ref.current.offsetWidth}/>
                             : e.type === "readmes" ?
-                                <ReadMes repos={e.data} />
+                                <ReadMes repos={e.data} key={idx}/>
                             : e.type === "description" && 
-                                <div>
+                                <div key={idx}>
                                     {
-                                    e.data.split("\n").map(data =>
-                                        <p className="description" key={idx}>{data}</p>
+                                    e.data.split("\n").map((data, idxdesc) =>
+                                        <p className="description" key={idxdesc}>{data}</p>
                                     )
                                     }
                                 </div>

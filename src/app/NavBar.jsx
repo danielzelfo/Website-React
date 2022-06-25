@@ -6,7 +6,7 @@ const NavBar = (props) => {
 
     return (
         <header>
-            <h1>{props.title}</h1>
+            <h1 className="pageTitle">{props.title}</h1>
             <div id="navigator">
                 <Link to="/">Home</Link>
                 <Link to="portfolio">My Portfolio</Link>
