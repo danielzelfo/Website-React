@@ -18,7 +18,7 @@ const Content = () => {
         <main style={{display: "flex", flexDirection: "column", gap: "40px"}}>
             <div className="section" id="aboutme">
                 <div>
-                    <h2>Software Engineer at<br/>Amazon</h2>
+                    <h2>Software Engineer</h2>
                     <p>Connect with me</p>
                     <div id="socialMediaBlock">
                         <a href="https://www.linkedin.com/in/daniel-zelfo/" target="_blank" rel="noreferrer"><img alt="LinkedIn Logo" src="https://danielzelfo.github.io/img/min/linkedin.png" /></a>
