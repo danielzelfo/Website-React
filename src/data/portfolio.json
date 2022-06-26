@@ -616,7 +616,8 @@
                 "type":"languages",
                 "data":[
                     "Java",
-                    "JavaScript"
+                    "JavaScript",
+                    "SQL"
                 ]
             },
             {
