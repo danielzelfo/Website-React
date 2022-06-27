@@ -591,10 +591,6 @@
                 ]
             },
             {
-                "type":"readmes",
-                "data": ["spidey"]
-            },
-            {
                 "type":"buttons",
                 "data":[
                     {
@@ -602,6 +598,10 @@
                         "url":"https://spideyweb.netlify.app"
                     }
                 ]
+            },
+            {
+                "type":"readmes",
+                "data": ["spidey"]
             }
         ]
     },
