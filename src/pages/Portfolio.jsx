@@ -25,21 +25,27 @@ const Portfolio = () => {
                 </div>
                 <div class="row">
                     <Cell name="cppPrograms" />
+                    <Cell name="auctionServer" />
                     <Cell name="sortingAnimations" />
                     <Cell name="dynamite" />
-                    <Cell name="shopSupreme" />
                 </div>
                 <div class="row">
+                    <Cell name="shopSupreme" />
                     <Cell name="todoList" />
                     <Cell name="mountieBot" />
                     <Cell name="wearableWeather" />
-                    <Cell name="scheduler" />
                 </div>
                 <div class="row">
+                    <Cell name="scheduler" />
                     <Cell name="neighborBank" />
                     <Cell name="opbot" />
                     <Cell name="encrytion" />
+                </div>
+                <div class="row">
                     <Cell name="paint" />
+                    <Cell dummy />
+                    <Cell dummy />
+                    <Cell dummy />
                 </div>
             </div>
         </main>

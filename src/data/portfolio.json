@@ -625,5 +625,37 @@
                 "data": ["FabFlix"]
             }
         ]
+    },
+    "auctionServer":{
+        "title":"Auction Server",
+        "content":[
+            {
+                "type":"slideshow",
+                "data":[
+                    {
+                        "url":"https://danielzelfo.github.io/img/min/portfolio/auctionServer/help.jpg",
+                        "caption":""
+                    },
+                    {
+                        "url":"https://danielzelfo.github.io/img/min/portfolio/auctionServer/sell.jpg",
+                        "caption":""
+                    },
+                    {
+                        "url":"https://danielzelfo.github.io/img/min/portfolio/auctionServer/buy.jpg",
+                        "caption":""
+                    }
+                ]
+            },
+            {
+                "type":"languages",
+                "data":[
+                    "C"
+                ]
+            },
+            {
+                "type":"description",
+                "data": "This is an auction server written in pure C using sockets and the POSIX thread library. It is built using the Producer–consumer pattern, scalable data structures, and synchronization primitives to allow clients to concurrently create, view, and participate in auctions while keeping track of their sales, wins, and balances."
+            }
+        ]
     }
 }

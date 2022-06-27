@@ -221,6 +221,18 @@ $lightColorLight: white;
         .mipsSudoku::after {
             content: "MIPS Sudoku";
         }
+    
+        .auctionServer::before {
+            background-image: url("https://danielzelfo.github.io/img/min/portfolio/auctionServer/buy-square.jpg");
+        }
+
+        .auctionServerHovered::before {
+            background-image: url("https://danielzelfo.github.io/img/min/portfolio/auctionServer/sell-square.jpg");
+        }
+
+        .auctionServer::after {
+            content: "Auction Server";
+        }
 
         .cellHovered::before {
             animation: tilt 1s forwards;
