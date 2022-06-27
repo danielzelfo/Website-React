@@ -21,8 +21,8 @@ const Content = () => {
                     <h2>Software Engineer</h2>
                     <p>Connect with me</p>
                     <div id="socialMediaBlock">
-                        <a href="https://www.linkedin.com/in/daniel-zelfo/" target="_blank" rel="noreferrer"><img alt="LinkedIn Logo" src="https://danielzelfo.github.io/img/min/linkedin.png" /></a>
-                        <a id="githubLink" href="https://github.com/danielzelfo" target="_blank" rel="noreferrer"><img alt="GitHub Logo" src="https://danielzelfo.github.io/img/min/github.png" /></a>
+                        <a href="https://www.linkedin.com/in/daniel-zelfo/" target="_blank" rel="noreferrer"><img alt="LinkedIn Logo" src="https://danielzelfo.github.io/img/original/linkedin.svg" /></a>
+                        <a id="githubLink" href="https://github.com/danielzelfo" target="_blank" rel="noreferrer"><img alt="GitHub Logo" src="https://danielzelfo.github.io/img/original/github.svg" /></a>
                     </div>
                     <a href="mailto:me@danielzelfo.com?Subject=Website%20Contact%20Email" >me@danielzelfo.com</a>
                 </div>
