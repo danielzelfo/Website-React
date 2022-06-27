@@ -37,15 +37,22 @@ const Project = () => {
                             e.type === "component" ?
                                 <ComponentLoader name={e.data} key={idx}/>
                             : e.type === "slideshow" ?
-                                <Slide key={idx}>
-                                    {e.data.map((slideImage, idxslide) => (
-                                        <div className="each-slide" key={idxslide}>
-                                            <div style={{ backgroundImage: `url(${slideImage.url})` }}>
-                                                <span>{slideImage.caption}</span>
-                                            </div>
+                                e.data.length === 1 ?
+                                    <div className="each-slide">
+                                        <div key={idx} style={{ backgroundImage: `url(${e.data[0].url})` }}>
+                                            <span>{e.data[0].caption}</span>
                                         </div>
-                                    ))}
-                                </Slide>
+                                    </div>
+                                :
+                                    <Slide key={idx}>
+                                        {e.data.map((slideImage, idxslide) => (
+                                            <div className="each-slide" key={idxslide}>
+                                                <div style={{ backgroundImage: `url(${slideImage.url})` }}>
+                                                    <span>{slideImage.caption}</span>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </Slide>
                             : e.type === "buttons" ?
                                 <div className="buttons" key={idx}>
                                     {e.data.map((btn, idxbtn) => (
