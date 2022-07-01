@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Cell from '../components/Cell'
+import GlobalScripts from '../components/GlobalScripts'
 
 export default function Home() {
   return (
@@ -11,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Daniel Zelfo</title>
         <meta name="description" content="Daniel Zelfo" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://danielzelfo.github.io/img/original/favicon.ico" />
       </Head>
       <Header title="Daniel Zelfo" />
       <main className={styles.main}>
@@ -20,8 +22,8 @@ export default function Home() {
             <h2>Software Engineer</h2>
             <p>Connect with me</p>
             <div className={styles.socialMediaBlock}>
-              <a href="https://www.linkedin.com/in/daniel-zelfo/" target="_blank" rel="noreferrer"><img alt="LinkedIn Logo" src="https://danielzelfo.github.io/img/original/linkedin.svg" /></a>
-              <a id="githubLink" href="https://github.com/danielzelfo" target="_blank" rel="noreferrer"><img alt="GitHub Logo" src="https://danielzelfo.github.io/img/original/github.svg" /></a>
+              <a href="https://www.linkedin.com/in/daniel-zelfo/" target="_blank" rel="noreferrer"><Image alt="LinkedIn Logo" src="https://danielzelfo.github.io/img/original/linkedin.svg" width={60} height={60} /></a>
+              <a id="githubLink" href="https://github.com/danielzelfo" target="_blank" rel="noreferrer"><Image alt="GitHub Logo" src="https://danielzelfo.github.io/img/original/github.svg" width={60} height={60} /></a>
             </div>
             <a href="mailto:me@danielzelfo.com?Subject=Website%20Contact%20Email" >me@danielzelfo.com</a>
           </div>
@@ -59,6 +61,7 @@ export default function Home() {
         </div>
       </main>
       <Footer />
+      <GlobalScripts />
     </div>
   )
 }

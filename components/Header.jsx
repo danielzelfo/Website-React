@@ -9,7 +9,7 @@ const Header = (props) => {
             <h1 className="pageTitle">{props.title}</h1>
             <div>
                 <Link href="/">Home</Link>
-                <Link href="portfolio">My Portfolio</Link>
+                <Link href="/portfolio">My Portfolio</Link>
             </div>
         </header>
     );

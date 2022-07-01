@@ -1,0 +1,58 @@
+$lightColorLight: white;
+$darkColorLight: #303030;
+
+.projectDemo {
+    text-align: center;
+    .projectContent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        img {
+            max-height: 500px;
+            max-width: 100%;
+        }
+
+        
+
+        .description {
+            opacity: 1;
+            font-weight: 400;
+        }
+        
+        .projButtons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 5px;
+        }
+    }
+}
+
+.eachSlide {
+    display: flex;
+    justify-content: center;
+
+    &>div {
+        height: 50vh;
+        width: 65vw;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &>span {
+            text-transform: uppercase;
+            text-shadow: 2px 2px 20px black;
+            color: #f5f5f5;
+            font-weight: 600;
+            font-size: 2em;
+            font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        }
+    }
+}
+
+@media only screen and (max-aspect-ratio: 3/2) and (orientation: portrait) and (max-width: 550px) {
+    .projectDemo .description {
+        width: 90%;
+    }
+}

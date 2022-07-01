@@ -51,6 +51,20 @@ body {
         margin-top: 10px;
         margin-bottom: 10px;
       }
+
+      .projbtn {
+        background-color: $lightColorLight;
+        color: $darkColorLight;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 4px;
+        text-decoration: none;
+
+        &:hover {
+            color: #0366d6;
+            background-color: $lightColorLight;
+        }
+      }
     }
   }
 }
@@ -118,6 +132,10 @@ body.dark {
 
   #githubLink img {
     filter: invert(100%);
+  }
+
+  #projectContent .subblock {
+    background-color: #262626 !important;
   }
 }
 
