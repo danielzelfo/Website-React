@@ -45,7 +45,9 @@
 }
 
 .socialMediaBlock {
-	display: inline-block;
+	display: flex;
+	gap: 2px;
+	justify-content: center;
 	a {
 		text-decoration: none;
 		opacity: .75;
