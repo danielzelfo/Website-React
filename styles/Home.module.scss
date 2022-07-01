@@ -1,0 +1,80 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.aboutme {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	> div {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		&:nth-child(1) {
+			width: 27%;
+			min-width: 278px;
+		}
+		&:nth-child(2) {
+			width: 73%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+			div {
+				display: flex;
+				flex-direction: column;
+				ol {
+					list-style-type: circle;
+					span {
+						display: block;
+					}
+					text-align: left;					
+				}
+				&.education {
+					span:nth-child(2) {
+						font-weight: 400;
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+.socialMediaBlock {
+	display: inline-block;
+	a {
+		text-decoration: none;
+		opacity: .75;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	img{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		border: 2px solid transparent;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.aboutme {
+		> div:nth-child(1) {
+			width: 40%;
+		}
+		> div:nth-child(2) {
+			width: 60%;
+		}
+	}
+}
+
+
+@media screen and (max-width: 1091px) {
+	.aboutme > div:nth-child(2) {
+		width: 100%;
+	}
+}

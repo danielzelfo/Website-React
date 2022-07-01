@@ -1,0 +1,19 @@
+.subblock {
+    width: 90%;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #F5F5F5;
+
+    * {
+        opacity: 1;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 3/2) and (orientation: portrait) and (max-width: 550px) {
+    .subblock {
+        width: 90%;
+    }
+}
