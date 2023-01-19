@@ -97,7 +97,7 @@
             },
             {
                 "type":"description",
-                "data":"AstraMonitor is a bot that notifies users on discord when a product restocks online by monitoring websites including Amazon, Bestbuy, Newegg, and Walmart. AstraBot is a discord bot that mentions roles and forwards messages to appropriate channels based on restocks."
+                "data":"AstraMonitor is a specialized Discord bot designed to notify users when a product restocks on various e-commerce platforms such as Amazon, Bestbuy, Newegg, and Walmart. To ensure optimal performance, AstraMonitor implements a concurrent thread pool management system that allows for parallel execution of tasks and efficient monitoring of a large number of products."
             }
         ]
     },
@@ -137,7 +137,7 @@
             },
             {
                 "type":"description",
-                "data":"Wearable Weather is a project that allows a IoT gadget to send data to a Flask REST API to update the frontend on a website. This project uses an Arduino with an ESP chip and a light sensor to send information about the light surrounding the Arduino to a Rest API on a web server. The web server uses Python and the Flask web framework for the backend. The Rest API then updates the light sensor data on the web server which allows the live page to display the updated brightness animation in the frontend using HTML and CSS. This was all made in under 36 hours."
+                "data":"Wearable Weather is an IoT project that enables real-time data transmission from a connected device to a web-based frontend via a Flask REST API. The project's design is based on an Arduino microcontroller, equipped with an ESP chip and a light sensor, that sends light-related data to a web server. The server, built using Python and the Flask web framework, processes the received data and updates the frontend accordingly. The web-based frontend, built using HTML and CSS, displays a live animation of the sensor data, providing real-time information on the surrounding light conditions. Despite the project's complexity, it was developed within a 36-hour time frame."
             }
         ]
     },
@@ -177,7 +177,7 @@
             },
             {
                 "type":"description",
-                "data":"This is the sudoku game written in MIPS assembly language. It runs on the MIPS Assembler and Runtime Simulator (MARS) and works through a MARS custom tool that displays the Sudoku grid by communicating with the MIPS assembly program and obtaining information about the digits and colors of each cell. The MIPS code allows the user to enter a move through a console window and applies the move to the board if it is legal by checking the appropriate row, column, and box for any duplicate values. If a move is not legal, the conflicting cells are marked with the error color. The program can also give hints to the user about possible values that can be placed in a given cell. At any time, the game can be saved to or loaded from disk."
+                "data":"This is a Sudoku game implemented in MIPS assembly language. It utilizes the MIPS Assembler and Runtime Simulator (MARS) as well as a custom tool that displays the game grid. This tool facilitates communication between the MIPS assembly program and the user interface, allowing for the input and display of digits and colors for each cell. The program implements functionality to validate user-inputted moves by checking for duplicate values in the corresponding row, column, and box. If a move is not valid, the conflicting cells are indicated with an error color. Additionally, the program offers a hint feature, providing possible values for a given cell. The game state can be saved and loaded at any point during play."
             }
         ]
     },
@@ -248,7 +248,7 @@
             },
             {
                 "type":"description",
-                "data":"Dynamite is a tool for creating interactive webpages for learning any subject.\nDynamite allows you to create a lesson by entering the content on the home page. Dynamite provides a url for a live view of the lesson as you create it. You can create a lesson webpage in which a student can read content, watch videos, and answer questions. Dynamite will evolve to include more ways to answer questions, including multiple choice, code, and much more. Dynamite will also evolve to allow for collaboration between multiple people. This will include video calls and screen sharing between students."
+                "data":"Dynamite is a comprehensive tool for creating interactive web-based educational materials. It allows users to create lessons by inputting content directly onto the home page, providing a live preview URL as the lesson is being constructed. The resulting lesson webpage can include a variety of multimedia elements, such as text, videos and interactive questions. The software has the potential to include additional features, such as multiple choice questions and code."
             }
         ]
     },
@@ -295,7 +295,7 @@
             },
             {
                 "type":"description",
-                "data":"This is a checkout bot for supremenewyork.com. It is a chrome extension made using JavaScript."
+                "data":"ShopSupreme is a checkout bot for supremenewyork.com. It is a chrome extension made using JavaScript."
             }
         ]
     },
@@ -356,7 +356,7 @@
             },
             {
                 "type":"description",
-                "data":"This is a discord bot made with Python and uses a MySQL server to store information about the discord server so that the information like the self assignable roles, prefixes, and links are saved and persist."
+                "data":"MountieBot is a discord bot made with Python and uses a MySQL server to store information about the discord server so that the information like the self assignable roles, prefixes, and links are saved and persist."
             }
         ]
     },
@@ -463,7 +463,7 @@
             },
             {
                 "type":"description",
-                "data":"This is a banking application made with Java. It allows users to create different types of accounts and make transactions within those accounts. It has a GUI made with JavaFX."
+                "data":"Friendly Neighborhood Bank is a banking application made with Java. It allows users to create different types of accounts and make transactions within those accounts. It has a GUI made with JavaFX."
             }
         ]
     },
@@ -500,7 +500,7 @@
             },
             {
                 "type":"description",
-                "data":"This is a discord bot made using Java for discord servers. It includes basic moderation commands and voice channel commands."
+                "data":"oPBoT is a discord bot made using Java for discord servers. It includes basic moderation commands and voice channel commands."
             }
         ]
     },
@@ -555,7 +555,7 @@
             },
             {
                 "type":"description",
-                "data":"These programs are basic paint programs made using JavaScript that allow the user to paint using any color, erase, and choose the size of the pen. One is made using the canvas element to be a regular paint program while the other is a pixelated paint program that paints individual elements on the page."
+                "data":"This webpage presents two distinct paint programs, both developed using JavaScript. They allow users to paint using any color, erase and adjust the size of the pen. One program uses the canvas element to create a regular paint program and the other program is a pixelated paint program that paints individual elements on the page."
             }
         ]
     },
