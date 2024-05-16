@@ -609,10 +609,6 @@
         "title":"FabFlix",
         "content":[
             {
-                "type":"YouTubeVids",
-                "data": ["OHcX4HqyIjE", "LdGi30Qjqbo"]
-            },
-            {
                 "type":"languages",
                 "data":[
                     "Java",
