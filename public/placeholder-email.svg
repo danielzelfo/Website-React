@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" fill="#1c1917"/>
+  <rect x="80" y="60" width="240" height="120" rx="4" stroke="#44403c" stroke-width="1.5" fill="none"/>
+  <path d="M80 60 L200 130 L320 60" stroke="#44403c" stroke-width="1.5" fill="none"/>
+  <circle cx="320" cy="80" r="12" fill="#292524" stroke="#57534e" stroke-width="1"/>
+  <text x="316" y="85" font-family="monospace" font-size="12" fill="#a8a29e">3</text>
+  <text x="200" y="220" font-family="monospace" font-size="11" fill="#57534e" text-anchor="middle">multi-region · event-driven · serverless</text>
+</svg>

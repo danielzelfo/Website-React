@@ -1,0 +1,146 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+}
+
+.hero {
+  padding-top: var(--space-xl);
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.03em;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.bio {
+  max-width: 560px;
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.sectionTitle {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-tertiary);
+}
+
+.interests {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.interests li {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  padding-left: var(--space-md);
+  position: relative;
+}
+
+.interests li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--color-text-tertiary);
+}
+
+.skillGroups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.skillGroup {
+  display: flex;
+  gap: var(--space-lg);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.skillLabel {
+  color: var(--color-text-tertiary);
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.skillValue {
+  color: var(--color-text-secondary);
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.eduItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.eduDegree {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.eduSchool {
+  font-size: 0.8125rem;
+  color: var(--color-text-tertiary);
+}
+
+.connect {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.connect a {
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.connect a:hover {
+  color: var(--color-text);
+  border-color: var(--color-text);
+}
+
+@media (max-width: 640px) {
+  .skillGroup {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .skillLabel {
+    min-width: unset;
+  }
+
+  .connect {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+}

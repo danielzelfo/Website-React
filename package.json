@@ -1,27 +1,32 @@
 {
   "name": "danielzelfo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "postbuild": "next-sitemap --config next.config.js",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "next": "12.2.0",
-    "next-sitemap": "^3.1.11",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-markdown": "^8.0.3",
-    "react-slideshow-image": "^3.7.5",
-    "sass": "^1.53.0"
+    "@tanstack/react-router": "^1.170.4",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-markdown": "^10.1.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.11.1",
-    "eslint": "8.18.0",
-    "eslint-config-next": "12.2.0"
+    "@tanstack/router-plugin": "^1.168.6",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "eslint": "^10.4.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.3",
+    "vite": "^8.0.13"
   }
 }
