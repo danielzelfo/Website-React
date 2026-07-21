@@ -6,6 +6,16 @@
   NODE_VERSION = "22"
 
 [[redirects]]
+  from = "/portfolio"
+  to = "/work"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio/*"
+  to = "/work/:splat"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
