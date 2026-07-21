@@ -35,7 +35,7 @@ function HomePage() {
         <h2 className={styles.sectionTitle}>Education</h2>
         <div className={styles.education}>
           <div className={styles.eduItem}>
-            <span className={styles.eduDegree}>BS Computer Science</span>
+            <span className={styles.eduDegree}>BS Computer Science — Algorithms</span>
             <span className={styles.eduSchool}>University of California, Irvine</span>
           </div>
           <div className={styles.eduItem}>
