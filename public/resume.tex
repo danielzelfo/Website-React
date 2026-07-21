@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% glyphtounicode/\pdfgentounicode are pdfTeX-only (omit for Tectonic/XeTeX).
+% Disable OpenType liga so the text layer stays "efficient" not "eﬃcient".
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[
+  BoldFont = lmroman10-bold.otf,
+  ItalicFont = lmroman10-italic.otf,
+  BoldItalicFont = lmroman10-bolditalic.otf,
+  SmallCapsFont = lmromancaps10-regular.otf,
+  Ligatures = TeX,
+  RawFeature = {-liga;-clig;-dlig}
+]
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Daniel Zelfo} \\ \vspace{1pt}
+    \small
+    \href{mailto:me@danielzelfo.com}{\underline{me@danielzelfo.com}} $|$
+    \href{https://linkedin.com/in/daniel-zelfo}{\underline{linkedin.com/in/daniel-zelfo}} $|$
+    \href{https://github.com/danielzelfo}{\underline{github.com/danielzelfo}} $|$
+    \href{https://danielzelfo.com}{\underline{danielzelfo.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California Irvine}{GPA: 3.62/4.0}
+      {Bachelor of Science in Computer Science}{October 2020 -- June 2022}
+    \resumeSubheading
+      {Mt. San Antonio College}{GPA: 3.91/4.0}
+      {Associate's of Science in Mathematics}{August 2018 -- June 2020}
+  \resumeSubHeadingListEnd
+
+  \vspace{-8pt}
+  \small{
+    \textbf{Relevant coursework:} Intro Software Engineering, Intro Computer Organization, Computer Networks, Design \& Analysis of
+    Algorithms, Machine/data Mining, Intro Data Management, Principles Operating Systems, Intro Optimization, Principles System Design,
+    Information Retrieval, Project in Data Structures and Algorithms, Project in Databases and Web Applications
+  }
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Development Engineer}{Irvine, CA}
+      {Amazon}{July 2022 -- Present}
+
+    \resumeSubheading
+      {Software Engineer}{Chino, CA}
+      {Akera LLC}{January 2021 -- June 2022}
+      \resumeItemListStart
+        \resumeItem{Specialize in creating solutions to enhance workplace productivity and streamline accounting processes.}
+        \resumeItem{Offer website design and development services using industry-standard technologies.}
+        \resumeItem{Provide comprehensive IT services including assembly and maintenance of computer systems, troubleshooting and repair.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{Brea, CA}
+      {Garmin}{June 2021 -- September 2021}
+      \resumeItemListStart
+        \resumeItem{Developed Human Machine Interface (HMI) and audio software for an automotive infotainment product. Utilized programming languages such as Java, Kotlin, C, and the Android software stack. Tested work on live product hardware.}
+        \resumeItem{Promoted software by creating demo videos and conducting live demonstrations for associates at BMW.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://danielzelfo.com/portfolio/FabFlix}{FabFlix}} $|$ \emph{Java, JavaScript}}{March 2022 -- June 2022}
+          \resumeItemListStart
+            \resumeItem{FabFlix is a web-based e-commerce platform that enables customers to easily search for and purchase movies. The system utilizes a modern, single-page design and employs microservices architecture for efficient and scalable functionality.}
+            \resumeItem{The backend services are developed using the Spring Boot Framework in Java, providing robust and reliable functionality. The frontend includes a web application, built using React framework, and a mobile application, developed using React Native, providing a seamless user experience across multiple platforms.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://danielzelfo.com/portfolio/spidey}{Spidey Search}} $|$ \emph{Python, JavaScript, SCSS}}{March 2022 -- June 2022}
+          \resumeItemListStart
+            \resumeItem{Spidey Search is a search engine that is built from the ground up to handle large volumes of documents or web pages. It comprises of a crawler, an indexer and a web-based search interface built with React.}
+            \resumeItem{The backend is a REST API developed using the Flask framework in Python which utilizes the index files created by the crawler and indexer to provide fast and accurate search results, the optimization of the search results is done by several heuristics which resulted in a response time of less than 100ms for a corpus of 55k documents.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://danielzelfo.com/portfolio/astra}{AstraMonitor / AstraBot}} $|$ \emph{Python}}{January 2020 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{AstraMonitor is a specialized Discord bot designed to notify users when a product restocks on various e-commerce platforms such as Amazon, Bestbuy, Newegg, and Walmart.}
+            \resumeItem{To ensure optimal performance, AstraMonitor implements a concurrent thread pool management system that allows for parallel execution of tasks and efficient monitoring of a large number of products.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://danielzelfo.com/portfolio}{More Projects}}}{}
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, Scala, Kotlin, C++, TypeScript, C, Assembly, PHP, HTML/CSS/JS, SQL, NoSQL, R} \\
+     \textbf{Frameworks / Libraries}{: React, Node.js, Next.js, Flask, Spring Boot, Selenium, JavaFX, jQuery, pandas} \\
+     \textbf{Developer Tools}{: Git, MySQL, Postman, cPanel, GCP, VS Code, IntelliJ, Android Studio}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
